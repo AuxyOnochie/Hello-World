@@ -2,9 +2,9 @@
 # See: https://circleci.com/docs/2.0/configuration-reference
 version: 2.1
 orbs:
-    say-hello: "cimg/base:stable
-    print-hello: circleci/node:13.8.0.
-    print-world: circleci/node:13.8.0.
+    base: "cimg/base:stable
+    node: circleci/node:13.8.0.
+    node: circleci/node:13.8.0.
 # Define a job to be invoked later in a workflow.
 # See: https://circleci.com/docs/2.0/configuration-reference/#jobs
 jobs:
