@@ -2,7 +2,7 @@
 # See: https://circleci.com/docs/2.0/configuration-reference
 version: 2.1
 orbs:
-    say-hello: cimg/base:stable
+    say-hello: "cimg/base:stable
     print-hello: circleci/node:13.8.0.
     print-world: circleci/node:13.8.0.
 # Define a job to be invoked later in a workflow.
@@ -27,7 +27,7 @@ jobs:
       - checkout
       - run:
           name: "Print Hello"
-          command: "echo Print, Hello People!"  
+          command: "echo Print, Hello People!"
   print-world:
     docker:
       - image: circleci/node:13.8.0.
